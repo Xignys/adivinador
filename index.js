@@ -19,8 +19,9 @@ function adivinador () {
     } else { 
         document.getElementById("nope").innerText = "NOP! Llevas " + intento + " intentos";
         document.getElementById("error1").style.display = "none";
+        document.getElementById("num1").value = "";
         if (intento === 3) {
-            document.getElementById("fallaste").innerHTML = "<p>Fallaste, me debes unos cheetos</p><br><img width='30%' src='gato1.jpg'</img>";
+            document.getElementById("fallaste").innerHTML = "<p>Fallaste, me debes unos cheetos</p><br><img width='50%' src='gato1.jpg'</img>";
             document.getElementById("inputcheetos").style.display = "none";
             document.getElementById("nope").style.display = "none";
             document.getElementById("retry").innerHTML = '<button onclick="retry()" class="btn btn-secondary" type="button" id="button-addon2">Prueba otra vez</button>';
